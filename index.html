@@ -271,7 +271,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	
 	::selection {
 		color: black;
-		background: blue;
+		background: yellow;
 	}
 	
 </style>
@@ -376,7 +376,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step7a').setAttribute("class", "visible");
 		document.getElementById('device5').setAttribute("style", "visibility:hidden");
 		document.getElementById('device6').setAttribute("style", "visibility:visible");
-			setTimeout(step7b, 2000);
+			setTimeout(step7b, 7500);
 	}	
 	
 	function step7b() {
@@ -384,7 +384,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step7b').setAttribute("class", "visible");
 		document.getElementById('device6').setAttribute("style", "visibility:hidden");
 		document.getElementById('device7').setAttribute("style", "visibility:visible");
-			setTimeout(step7c, 2500);
+			setTimeout(step7c, 6500);
 	}	
 	
 	function step7c() {
@@ -392,7 +392,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step7c').setAttribute("class", "visible");
 		document.getElementById('device7').setAttribute("style", "visibility:hidden");
 		document.getElementById('device8').setAttribute("style", "visibility:visible");
-			setTimeout(step7d, 2500);
+			setTimeout(step7d, 6500);
 	}	
 
 	function step7d() {
@@ -400,7 +400,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step7d').setAttribute("class", "visible");
 		document.getElementById('device8').setAttribute("style", "visibility:hidden");
 		document.getElementById('device9').setAttribute("style", "visibility:visible");
-			setTimeout(step7e, 2500);
+			setTimeout(step7e, 7500);
 	}	
 	
 	function step7e() {
@@ -408,7 +408,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step7e').setAttribute("class", "visible");
 		document.getElementById('device9').setAttribute("style", "visibility:hidden");
 		document.getElementById('device10').setAttribute("style", "visibility:visible");
-			setTimeout(step8, 2500);
+			setTimeout(step8, 6500);
 	}	
 		
 	function step8() {
@@ -434,7 +434,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step8a').setAttribute("class", "visible");
 		document.getElementById('device11').setAttribute("style", "visibility:hidden");
 		document.getElementById('device12').setAttribute("style", "visibility:visible");
-			setTimeout(step8d, 2000);
+			setTimeout(step8d, 3000);
 	}		
 	function step8d() {
 				document.getElementById('cursor').setAttribute("class", "moved");
@@ -442,14 +442,14 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step8b').setAttribute("class", "visible");
 		document.getElementById('device12').setAttribute("style", "visibility:hidden");
 		document.getElementById('device13').setAttribute("style", "visibility:visible");
-			setTimeout(step8e, 3000);
+			setTimeout(step8e, 4000);
 	}	
 	function step8e() {
 		document.getElementById('step8b').setAttribute("class", "hidden");
 		document.getElementById('step8c').setAttribute("class", "visible");
 		document.getElementById('device13').setAttribute("style", "visibility:hidden");
 		document.getElementById('device14').setAttribute("style", "visibility:visible");
-			setTimeout(step9, 2000);
+			setTimeout(step9, 4000);
 	}
 	function step9() {
 		document.getElementById('step8c').setAttribute("class", "hidden");
@@ -495,26 +495,26 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 
 <h2 id="stepf5">Then click on <i>Orweb</i> to install it's partner web browser.<br><a href="javascript:step5()">Got it.</a></h2>
 <h2 id="stepf4">Go back to the main screen and you should see the Guardian Project apps. Click on <i>Orbot</i> to install. <a href="javascript:stepf5()">Got it.</a></h2>
-<h2 id="stepf3">Enter: https://guardianproject.info/repo/ (don't forget the s!) <br><a href="javascript:stepf4()">Done. Where are the apps?</a></h2>
+<h2 id="stepf3">Enter: <i>https://guardianproject.info/repo/</i> (don't forget the s!) <br><a href="javascript:stepf4()">Done. Where are the apps?</a></h2>
 <h2 id="stepf2">Run the app and navigate over to Menu > Manage Repos > New Repository <a href="javascript:stepf3()">Cool. What do I enter?</a></h2>
-<h2 id="stepf1">There's an alternative store. Install F-droid by entering <br><i>https://f-droid.org/FDroid.apk</i> into the browser. <a href="javascript:stepf2()">Done. Next?</a></h2>
-<h2 id="step12">You're awesome! <a href="javascript:step1()">Play it again?</a> · For more info, visit our site:<br><a href="http://guardianproject.info" target="_blank">The Guardian Project</a></h2>
-<h2 id="step11a">Your configuration is wrong. <a href="javascript:step8()">Restart Orbot and try again.</a></h2>
+<h2 id="stepf1">There's an alternative app store. Install <i>F-droid</i> by entering <br><i>https://f-droid.org/FDroid.apk</i> into a mobile browser. <a href="javascript:stepf2()">Done. Next?</a></h2>
+<h2 id="step12">You're awesome! Type in any website to browse it anonymously. <a href="javascript:step1()">Play again?</a> <br>· For more info, visit our site: <a href="http://guardianproject.info" target="_blank">The Guardian Project</a> · </h2>
+<h2 id="step11a">Your configuration is wrong. <a href="javascript:step8()">Restart <i>Orbot</i> and try again using <i>Orweb v2</i>.</a></h2>
 <h2 id="step11">11. It pulls up <i>check.torproject.org</i> to confirm we're surfing anonymously.<br><a href="javascript:step12()">I see <i>congrats</i>.</a> / <a href="javascript:step11a()">I don't see <i>congrats</i>.</a></h2>
-<h2 id="step10">10. Press the globe icon to pull up our web browser Orweb. <a href="javascript:step11()">Opening the app!</a></h2>
-<h2 id="step9">9. Let's confirm we can now bypass the censors. <a href="javascript:step10()">Ok, how?</a></h2>
-<h2 id="step8c">Orbot turns green when it's connected to Tor.</h2>
-<h2 id="step8b">Orbot turns yellow as it's starting</h2>
-<h2 id="step8a">Orbot starts grey</h2>
-<h2 id="step8">8. Now we long press the button to getting started. <a href="javascript:step8a()">Pressing!</a></h2>
+<h2 id="step10">10. Press the globe icon to pull up the web browser that you downloaded. <a href="javascript:step11()">Opening <i>Orweb v2</i>!</a></h2>
+<h2 id="step9">9. Let's confirm that we can now bypass the censors. <a href="javascript:step10()">Ok, how?</a></h2>
+<h2 id="step8c"><i>Orbot</i> turns <SPAN style="BACKGROUND-COLOR: limegreen">green</SPAN> when it's connected to <i>Tor</i>.</h2>
+<h2 id="step8b"><i>Orbot</i> becomes <SPAN style="BACKGROUND-COLOR: yellow">yellow</SPAN> as it's connecting...</h2>
+<h2 id="step8a"><i>Orbot</i> starts <SPAN style="BACKGROUND-COLOR: silver">grey</SPAN>.</h2>
+<h2 id="step8">8. Now we long press the power button to get started. <a href="javascript:step8a()">Pressing!</a></h2>
 <h2 id="step7e">Security is a two way street. Make sure your friends are secure too.</h2>
-<h2 id="step7d">Otherwise you can use these apps over Tor using the proxy feature.</h2>
-<h2 id="step7c">If your phone is jailbroken/rooted then you choose to route all traffic over <i>Tor</i>.</h2>
+<h2 id="step7d">Otherwise you can use cool apps that have a proxy feature, <br>like these ones, <i>Twitter</i>, and others.</h2>
+<h2 id="step7c">If your phone is jailbroken/rooted then you can choose <br> to route all app traffic over <i>Tor</i>.</h2>
 <h2 id="step7b">Is it really secure? We break it down.</h2>
-<h2 id="step7a">We'll tell you about our project and onion routing.</h2>
+<h2 id="step7a">We'll tell you about our project and onion routing via <i>Tor</i>.</h2>
 <h2 id="step6">6. Choose your language and get started. <a href="javascript:step7a()">Let's go with English.</a></h2>
 <h2 id="step5">5. Open <i>Orbot</i>. <a href="javascript:step6()">Done.</a></h2>
-<h2 id="step4">4. Get our sister app, Orweb for anonymous web browsing. <a href="javascript:step5()">Hey look, it's suggested!</a></h2>
+<h2 id="step4">4. Get our sister app, <i>Orweb</i> for anonymous web browsing. <br><a href="javascript:step5()">Hey look, it's suggested!</a></h2>
 <h2 id="step3">3. Review the permissions. Then, maybe, accept them. <a href="javascript:step4()">OK, I trust you.</a></h2>
 <h2 id="step2">2. Search for <i>Orbot</i>. <a href="javascript:step3()">Got it.</a></h2>
 <h2 id="step1">1. Open the Google Play Store. <a href="javascript:step2()">Easy. Next?</a> <br><a href="javascript:stepf1()">It's blocked. Help!</a></h2>
